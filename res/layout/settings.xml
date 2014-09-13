@@ -1,0 +1,53 @@
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingLeft="100dp" android:paddingRight="100dp">
+    <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SFXseek"
+            android:max="100"
+            android:focusableInTouchMode="true" android:layout_above="@+id/MusicAmt"
+            android:layout_alignParentLeft="true" android:progress="30"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="SFX:"
+            android:id="@+id/SFX"
+            android:layout_above="@+id/SFXseek" android:layout_alignParentLeft="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/SFXAmt"
+            android:layout_above="@+id/SFXseek" android:layout_alignRight="@+id/SFXseek"/>
+    <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/musicSeek" android:layout_centerVertical="true"
+            android:progress="30" android:layout_alignParentLeft="true" android:layout_alignRight="@+id/MusicAmt"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music:"
+            android:id="@+id/Music" android:layout_above="@+id/musicSeek" android:layout_alignLeft="@+id/musicSeek"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/MusicAmt" android:layout_alignBaseline="@+id/Music"
+            android:layout_alignBottom="@+id/Music" android:layout_alignLeft="@+id/SFXAmt"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/SettingsOK" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/SettingsTitle" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp" android:text="Settings" android:phoneNumber="true"/>
+</RelativeLayout>
