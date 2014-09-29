@@ -57,6 +57,9 @@ public class SettingsHandler extends Activity {
                 String newSeekValueString = String.valueOf(newSeekValue);
                 CharSequence charSequence = newSeekValueString;
                 seekAmtString.setText(charSequence);
+                float volume = (float) (1 - (Math.log(100 - progress) / Math.log(100)));
+           //     MusicInitiator.SFXmediaPlayer.setVolume(volume, volume);
+           //     MusicInitiator.SFXmediaPlayer.start();
             }
 
             @Override
@@ -85,6 +88,9 @@ public class SettingsHandler extends Activity {
                 String newMusicSeekValueString = String.valueOf(newMusicSeekValue);
                 CharSequence musicCharSequenceNew = newMusicSeekValueString;
                 musicSeekAmtTextViewNew.setText(musicCharSequenceNew);
+                float volume = (float) (1 - (Math.log(100 - progress) / Math.log(100)));
+            //    MusicInitiator.musicMediaPlayer.setVolume(volume, volume);
+            //    MusicInitiator.musicMediaPlayer.start();
             }
 
             @Override

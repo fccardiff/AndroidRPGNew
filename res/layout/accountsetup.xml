@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:paddingLeft="100dp" android:paddingRight="100dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Account Setup"
+            android:id="@+id/textView"
+            android:textSize="50dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            android:textStyle="bold|italic" android:textColor="#ffff9d00"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:id="@+id/createAccount"
+            android:layout_marginBottom="48dp" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:inputType="text"
+            android:layout_below="@+id/textView" android:layout_alignParentLeft="true"
+            android:layout_marginTop="175dp" android:hint="Username"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password"
+            android:password="false"
+            android:layout_below="@+id/username" android:layout_alignParentLeft="true" android:layout_marginTop="54dp"
+            android:hint="Password"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to Menu"
+            android:id="@+id/backToMenu"
+            android:layout_alignTop="@+id/createAccount" android:layout_centerHorizontal="true"
+            android:layout_marginTop="47dp"/>
+</RelativeLayout>

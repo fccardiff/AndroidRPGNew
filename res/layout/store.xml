@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:paddingLeft="50dp" android:paddingRight="50dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Store"
+            android:id="@+id/textView"
+            android:textSize="40dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/storeToMenu"
+            android:layout_marginBottom="40dp" android:singleLine="true" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Remove Ads Permanently"
+            android:id="@+id/textView2" android:layout_below="@+id/textView" android:layout_alignParentLeft="true"
+            android:layout_marginTop="60dp" android:textSize="35dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.99"
+            android:id="@+id/purchaseRemoveAds" android:layout_alignTop="@+id/textView2" android:layout_alignParentRight="true"/>
+</RelativeLayout>

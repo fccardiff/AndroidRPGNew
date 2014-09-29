@@ -7,8 +7,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/SFXseek"
             android:max="100"
-            android:focusableInTouchMode="true" android:layout_above="@+id/MusicAmt"
-            android:layout_alignParentLeft="true" android:progress="30"/>
+            android:focusableInTouchMode="true"
+            android:progress="30" android:layout_above="@+id/MusicAmt" android:layout_alignParentRight="true"
+            android:layout_marginBottom="54dp"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,7 +22,8 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:id="@+id/SFXAmt"
-            android:layout_above="@+id/SFXseek" android:layout_alignRight="@+id/SFXseek"/>
+            android:layout_above="@+id/SFXseek" android:layout_alignRight="@+id/SFXseek" android:textSize="20dp"
+            android:textIsSelectable="true"/>
     <SeekBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,7 +39,8 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:id="@+id/MusicAmt" android:layout_alignBaseline="@+id/Music"
-            android:layout_alignBottom="@+id/Music" android:layout_alignLeft="@+id/SFXAmt"/>
+            android:layout_alignBottom="@+id/Music" android:layout_alignLeft="@+id/SFXAmt" android:layout_alignRight="@+id/SFXseek"
+            android:textSize="20dp"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,6 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/SettingsTitle" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp" android:text="Settings" android:phoneNumber="true"/>
+            android:id="@+id/SettingsTitle"
+            android:text="Settings" android:phoneNumber="true" android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
 </RelativeLayout>
