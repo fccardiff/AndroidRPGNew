@@ -41,12 +41,13 @@
             android:id="@+id/MusicAmt" android:layout_alignBaseline="@+id/Music"
             android:layout_alignBottom="@+id/Music" android:layout_alignLeft="@+id/SFXAmt" android:layout_alignRight="@+id/SFXseek"
             android:textSize="20dp"/>
-    <Button
+    <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OK"
+            android:src="@drawable/back"
             android:id="@+id/SettingsOK" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
-            android:layout_marginBottom="50dp"/>
+            android:layout_marginBottom="50dp" android:background="@android:color/transparent"
+            android:baselineAlignBottom="false"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

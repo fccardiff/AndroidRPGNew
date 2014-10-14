@@ -27,6 +27,7 @@ public class ChatConnect implements Runnable,Serializable {
             final Scanner in = new Scanner(socket.getInputStream());
             final PrintWriter out = new PrintWriter(socket.getOutputStream());
             final String userId = ServerConnect.userId;
+            final String password = ServerConnect.password;
             final Button sendMessage = ServerConnect.b;
             final DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
             sendMessage.setOnClickListener(new View.OnClickListener() {
@@ -44,12 +45,18 @@ public class ChatConnect implements Runnable,Serializable {
                             dataOutputStream.writeByte(1);
                             dataOutputStream.writeUTF(userId);
                             dataOutputStream.flush();
+                            dataOutputStream.writeByte(2);
+                            dataOutputStream.writeUTF(password); //TODO: MAKE PASSWORD HASHED WHEN SENDING, MAKE PASSWORD MORE SECURE IN ServerConnect
+                            dataOutputStream.flush();
+                            dataOutputStream.writeByte(3);
+                            dataOutputStream.writeUTF(inputMsg);
+                            dataOutputStream.flush();
+                            dataOutputStream.writeByte(4);
+                            dataOutputStream.writeUTF("createPermissions");
+                            dataOutputStream.flush();
                             // TODO: HASHED? SEND PASSWORD
                             // TODO: Get server to check user group and check message color
                             // Send inputMsg
-                            dataOutputStream.writeByte(2);
-                            dataOutputStream.writeUTF(inputMsg);
-                            dataOutputStream.flush();
                         }
                         catch(IOException e){
                             e.printStackTrace();

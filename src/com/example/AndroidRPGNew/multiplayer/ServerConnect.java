@@ -26,6 +26,7 @@ public class ServerConnect extends Activity {
     static TextView text = null;
     static TextView chatLog = null;
     static SharedPreferences s;
+    static String password = null;
     static Socket socket;
     public static Context context;
     //String newUserId = null;
@@ -40,6 +41,10 @@ public class ServerConnect extends Activity {
         if(userId == ""){
             userId = "unknown";
         }
+        password = s.getString("password", "");
+        if(password == ""){
+            password = "unknown";
+        }
         b = (Button) findViewById(R.id.chatMessageSend);
         text = (TextView) findViewById(R.id.chatMessage);
         chatLog = (TextView) findViewById(R.id.chatView);
@@ -47,7 +52,7 @@ public class ServerConnect extends Activity {
         // TODO: KEEP THE ABOVE TWO LINES ONLY TEMPORARILY - FIND A FIX!
         connect();
     }
-    public void connect() {
+    public static void connect() {
         final int port = 2525;
         final String IP = MultiplayerMenu.getIP();
         try {

@@ -69,5 +69,4 @@ public class MultiplayerMenu extends Activity {
         // Set the IP from the choice user made from the list
         IP = newIP;
     }
-
 }

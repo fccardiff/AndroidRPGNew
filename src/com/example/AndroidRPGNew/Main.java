@@ -21,6 +21,7 @@ public class Main extends Activity {
     // TODO: Consider in-app purchases. None, specific items? Etc.
     // TODO: Implement server connections and setup test server. Add chat functionality first.
     // TODO: Optionally, join server by IP
+    // TODO: MAX USER NAME CHARACTERS
     // Quests
     // Trading
     // Campaign

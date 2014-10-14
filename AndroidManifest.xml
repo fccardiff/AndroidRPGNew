@@ -18,5 +18,41 @@
                   android:screenOrientation="landscape"
                   android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
         </activity>
+        <activity android:name="com.example.AndroidRPGNew.StoreHandler"
+                  android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        </activity>
+        <activity android:name="com.example.AndroidRPGNew.Loading"
+                  android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        </activity>
+        <activity android:name="com.example.AndroidRPGNew.multiplayer.AccountCreate"
+                  android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        </activity>
+        <activity android:name="com.example.AndroidRPGNew.multiplayer.AccountSetup"
+                  android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        </activity>
+        <activity android:name="com.example.AndroidRPGNew.multiplayer.MultiplayerMenu"
+                  android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        </activity>
+        <activity android:name="com.example.AndroidRPGNew.multiplayer.SQLConnection"
+                  android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        </activity>
+        <activity android:name="com.example.AndroidRPGNew.multiplayer.ServerConnect"
+                  android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        </activity>
+        <activity android:name="com.example.AndroidRPGNew.multiplayer.ChatConnect"
+                  android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        </activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NETWORK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
 </manifest>
